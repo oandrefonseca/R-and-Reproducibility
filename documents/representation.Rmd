@@ -29,14 +29,18 @@ When you click the **Knit** button a document will be generated that includes bo
 
 # https://ulyngs.github.io/rmarkdown-workshop-2019/slides/Day2.html#83
 # https://stanford.edu/~vbauer/teaching/rmarkdown.html
+# http://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/
 
 # Rstudio
 # Utilities
 # Project management
 # Rmarkdown and Rnotebooks
 # Git...
+# Print screens
 # Extra: Bookdown and Blogdown
 # Extra: Shiny Apps
+
+
 
 ```
 
