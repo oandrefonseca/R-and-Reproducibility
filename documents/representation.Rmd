@@ -56,6 +56,8 @@ When you click the **Knit** button a document will be generated that includes bo
 # https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/ 
 # https://libscie.github.io/rmarkdown-workshop/handout.html
 
+# https://create.kahoot.it/kahoots/my-kahoots/folder/53917951-b10f-49b0-bd51-c87ac4d8acae
+
 # Git and code version
 ## What is git?
 ## Basic commands: init, add, commit, push, pull and status
