@@ -54,6 +54,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 # https://daringfireball.net/projects/markdown/dingus
 # https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/ 
+# https://libscie.github.io/rmarkdown-workshop/handout.html
 
 # Git and code version
 ## What is git?
