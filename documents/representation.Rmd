@@ -42,6 +42,7 @@ When you click the **Knit** button a document will be generated that includes bo
 ## Starting a project using RStudio
 
 # https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
+# https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/ 
 
 # Communicate your results using R
 ## Rmarkdown and Rnotebooks
@@ -56,6 +57,12 @@ When you click the **Knit** button a document will be generated that includes bo
 ## Basic commands: init, add, commit, push, pull and status
 ## Fundamental workflow
 ## .gitignore
+
+# https://education.github.com/git-cheat-sheet-education.pdf
+# https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
+# https://dev.to/sublimegeek/git-staging-area-explained-like-im-five-1anh
+# https://dzone.com/articles/top-20-git-commands-with-examples
+# https://rogerdudler.github.io/git-guide/
 
 # Extra: Bookdown and Blogdown
 # Extra: Shiny Apps
