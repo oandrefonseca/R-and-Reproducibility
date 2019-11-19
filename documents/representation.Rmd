@@ -30,6 +30,7 @@ When you click the **Knit** button a document will be generated that includes bo
 # https://ulyngs.github.io/rmarkdown-workshop-2019/slides/Day2.html#83
 # https://stanford.edu/~vbauer/teaching/rmarkdown.html
 # http://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/
+# https://datacarpentry.org/rr-intro/02-toolkit/
 
 # Rstudio
 ## A looking throught the panes
@@ -42,7 +43,6 @@ When you click the **Knit** button a document will be generated that includes bo
 ## Starting a project using RStudio
 
 # https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
-# https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/ 
 
 # Communicate your results using R
 ## Rmarkdown and Rnotebooks
@@ -51,6 +51,9 @@ When you click the **Knit** button a document will be generated that includes bo
 ### Images and animations
 ## Saving as HTML, pdf or doc
 ## Re-scale figures
+
+# https://daringfireball.net/projects/markdown/dingus
+# https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/ 
 
 # Git and code version
 ## What is git?
