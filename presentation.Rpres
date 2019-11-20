@@ -7,24 +7,24 @@ autosize: true
 Presentation outline
 ========================================================
 
-- Can we talk about reproducibility?
-- A gentle introduction to Rstudio
-- Panes, Short-cuts and Addins
-- Good pratices: RStudio and Rprojects!
-- What you shouldn't do...
-- **Day-to-day workflow**
-- Communicate like a boss!
-- Welcome to RMarkdown
-- Markdown syntax to document style
-- Saving as HTML, pdf or doc
-- Hands-on moment...
-- For the last but not less important
-- Git and Git hosting services
-- Using Git through RStudio
-- To sum up!
-- Is this all? Of course...
-- A few extras :)
-- References
+* Can we talk about reproducibility?
+* A gentle introduction to Rstudio
+  + Panes, Shortcuts and Addins
+* Organizing myself with Rprojects!
+  + What you shouldn't do...
+* Day-to-day workflow
+* Communicate your results like a boss!
+* Welcome to RMarkdown
+  + Markdown syntax to document style
+  + Saving as HTML, pdf or doc
+* Hands-on moment...
+* For the last but not less important
+  + Git and Git hosting services
+* Using Git through RStudio
+* Finally! To sum up!
+* Is this all? Of course...
+* A few extras :)
+* References
 
 Can we talk about reproducibility?
 ========================================================
@@ -40,15 +40,51 @@ Can we talk about reproducibility?
 A gentle introduction to Rstudio
 ========================================================
 
-Panes, Short-cuts and Addins
-========================================================
-[Screen-shots]
+RStudio is an integrated development environment for R, a programming language for statistical computing and graphics. The RStudio IDE is developed by RStudio, Inc., a commercial enterprise founded by JJ Allaire, creator of the programming language ColdFusion.
 
-Good pratices: RStudio and Rprojects!
+How to install? Check it **out**!
+
+Panes, Shortcuts and Addins
 ========================================================
-[Concept]
+
+[Image]
+
+**Figure 1. Rstudio panels.** *Source*, coding area similar text editor. *Console*, all code typed into "Source" area will be evaluated into R Console. *Environment/History*, in this panel we can inspect what objects were loaded into your workspace. *Files/Plots/Packages/Help*, another useful panel, allowing directory browsing, plot visualization, package installation or selection. 
 
 ========================================================
+
+![RStudio Shortcuts](./figues/rstudio_shortcuts.png)
+
+## For now keep in my **Ctrl+Alt+I** to insert a new code chunk
+
+========================================================
+
+![RStudio Addins](./figues/rstudio_shortcuts.png)
+
+Organizing myself with Rprojects!
+========================================================
+
+**RStudio** projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents.
+
+But what it means? In short, productivity and **less headache**
+
+[Good pratices animation]
+
+The .RProj in a nutshell!
+========================================================
+
+1. Creates a project file (with an .Rproj extension) within the project directory. This file contains various project options (discussed below) and can also be used as a shortcut for opening the project directly from the filesystem.
+
+2. Creates a hidden directory (named .Rproj.user) where project-specific temporary files (e.g. auto-saved source documents, window-state, etc.) are stored. This directory is also automatically added to .Rbuildignore, .gitignore, etc. if required.
+
+3. Loads the project into RStudio and display its name in the Projects toolbar (which is located on the far right side of the main toolbar)
+
+[Oficial Documentation](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) 
+
+========================================================
+
+## For your convenience
+
 1. Click the **File** menu button, then **New Project**.
 2. Click **New Directory**.
 3. Click **New Project**.
@@ -56,57 +92,74 @@ Good pratices: RStudio and Rprojects!
 5. If available, select the checkbox for **Create a git repository.**
 6. Click the **Create Project** button.
 
+(We gonna a hands-on moment)
+
 What you shouldn't do...
 ========================================================
-[Please, bitch...]
 
+https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
+
+[Please, bitch...]
 
 Presentation outline
 ========================================================
 
-- Can we talk about reproducibility?
-- A gentle introduction to Rstudio
-- Panes, Short-cuts and Addins
-- Good pratices: RStudio and Rprojects!
-- What you shouldn't do...
-- **Day-to-day workflow**
-- Communicate like a boss!
-- Welcome to RMarkdown
-- Markdown syntax to document style
-- Saving as HTML, pdf or doc
-- Hands-on moment...
-- For the last but not less important
-- Git and Git hosting services
-- Using Git through RStudio
-- To sum up!
-- Is this all? Of course...
-- A few extras :)
-- References
+* Can we talk about reproducibility?
+* A gentle introduction to Rstudio
+  + Panes, Shortcuts and Addins
+* Organizing myself with Rprojects!
+  + What you shouldn't do...
+* **Day-to-day workflow**
+* Communicate your results like a boss!
+* Welcome to RMarkdown
+  + Markdown syntax to document style
+  + Saving as HTML, pdf or doc
+* Hands-on moment o/
+* Coding version: last but not less important
+  + Git and Git hosting services
+  + Using Git through RStudio
+* Finally! To sum up!
+* Is this all? Of course...
+* A few extras :)
+* References
 
 Day-to-day workflow
 ========================================================
 
-![Source: http://ohi-science.org.](./figues/datascience_workflow.png)
+![Data Science Worflow](./figues/datascience_workflow.png)
 
-Communicate like a boss!
+Communicate your results like a boss!
 ========================================================
-
-[Traditional way and Boss way]
+[Traditional way and Boss way scheme]
 
 Welcome to RMarkdown 
 ========================================================
 
-[Historical background]
+Basically, it is an authoring framework for data science developed by RStudio Team. RMarkdown is an R package build upon **Markdown** is a text-to-HTML conversion tool for web writers. Originally Markdown was written in **Perl**,  allowing you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
 
 Markdown syntax to document style
 ========================================================
 
-[Table with the basic syntax]
+```{r, echo = FALSE}
+
+head(iris)
+
+```
+
+[Table](https://www.markdownguide.org/basic-syntax/)
+
+### Or check out [help](https://rmarkdown.rstudio.com/)!
 
 Saving as HTML, pdf or doc
 ========================================================
 
-![Source: http://ohi-science.org.](/home/andrefonseca/Training/r_and_reproducibility/figues/rmarkdown_and_knitr.png)
+![RMarkdown and Knit](/home/andrefonseca/Training/r_and_reproducibility/figues/rmarkdown_and_knitr.png)
+
+========================================================
+
+### Almost in the hands-on moment! But first, a few concepts in RMarkdown!
+
+[RMarkdown concepts]
 
 Hands-on moment...
 ========================================================
@@ -121,75 +174,86 @@ Hands-on moment...
 Presentation outline
 ========================================================
 
-- Can we talk about reproducibility?
-- A gentle introduction to Rstudio
-- Panes, Short-cuts and Addins
-- Good pratices: RStudio and Rprojects!
-- What you shouldn't do...
-- **Day-to-day workflow**
-- Communicate like a boss!
-- Welcome to RMarkdown
-- Markdown syntax to document style
-- Saving as HTML, pdf or doc
-- Hands-on moment...
-- For the last but not less important
-- Git and Git hosting services
-- Using Git through RStudio
-- To sum up!
-- Is this all? Of course...
-- A few extras :)
-- References
+* Can we talk about reproducibility?
+* A gentle introduction to Rstudio
+  + Panes, Shortcuts and Addins
+* Organizing myself with Rprojects!
+  + What you shouldn't do...
+* Day-to-day workflow
+* Communicate your results like a boss!
+* Welcome to RMarkdown
+  + Markdown syntax to document style
+  + Saving as HTML, pdf or doc
+* Hands-on moment o/
+* **Coding version: last but not less important**
+  + Git and Git hosting services
+  + Using Git through RStudio
+* Finally! To sum up!
+* Is this all? Of course...
+* A few extras :)
+* References
 
-For the last but not less important
+Coding version: last but not less important
 ========================================================
-
 [Version coding and Git concept]
+
+========================================================
+[Animation explaning git]
 
 Git and Git hosting services
 ========================================================
 
-'./'
+![Git Repositories](./figues/git_flavors.jpg)
 
-Wait! Let's create a git **account**!
+### Wait! Let's create a GitHub **account** !
+
 ========================================================
 
-========================================================
+## A few basic command in Git that you should know...
 
->- init
->- clone
->- remote
->- status
->- add
->- commit
->- push
->- pull
->- merge
+- init
+- clone
+- remote
+- status
+- add
+- commit
+- push
+- pull
+- merge
 
-[Commands and cheet sheat]
+We are not covering git commands in this class, but I strongly suggest you guys understand more about the program. Please check out this outstanding [tutorial](https://rogerdudler.github.io/git-guide/)
 
 Using Git through RStudio
 ========================================================
 
+[Animation Git and Rstudio]
 
 Finally! To sum up!
 ========================================================
+[Project creation and workflow]
 
 Is this all? Of course...
 ========================================================
 **But no**
 
+### More about good pratices
+
 - You may should take a look in *Lintr*
 - Or Tidyverse coding style
+- Project organization
 
 A few extras :)
 ========================================================
 
+### To study
+
 - Bookdown and Blogdown
 - Shiny Apps
+- Rticles package
 - R presentations
 
 ========================================================
-[Mind blow]
+[Mind blow animation]
 
 References
 ========================================================
@@ -197,8 +261,9 @@ References
 1. Repeatability vs. Reproducibility [1]
 2. Is there a reproducibility crisis in science? [2]
 3. RMarkdown CheatSheet by RStudio [3]
-4. XXXX
+4. Rstudio CheatSheet [4]
 
 [1]: https://www.technologynetworks.com/informatics/articles/repeatability-vs-reproducibility-317157 "Repeatability vs. Reproducibility"
 [2]: https://www.youtube.com/watch?v=FpCrY7x5nEE "Is there a reproducibility crisis in science?"
 [3]: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf "RMarkdown CheatSheet by RStudio"
+[4]: https://rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf "Rstudio CheatSheet"

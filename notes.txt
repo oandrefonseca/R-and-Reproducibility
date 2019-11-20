@@ -34,4 +34,5 @@
 
 ## 
 
+https://www.econometrics-with-r.org/1-1-a-very-short-introduction-to-r-and-rstudio.html
 
