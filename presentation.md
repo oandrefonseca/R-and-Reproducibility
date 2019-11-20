@@ -226,7 +226,7 @@ Git and Git hosting services
 - pull
 - merge
 
-We are not covering git commands in this class, but I strongly suggest you guys understand more about the program. Please check out this outstanding [tutorial](https://rogerdudler.github.io/git-guide/)
+### We are not covering git commands in this class, but I strongly suggest you guys understand more about the program. Please check out this outstanding [tutorial](https://rogerdudler.github.io/git-guide/)
 
 Using Git through RStudio
 ========================================================
