@@ -2,7 +2,12 @@
 title: "R and Reproducibility"
 author: "Andre Fonseca"
 date: "November 17, 2019"
-output: ioslides_presentation
+output: 
+  ioslides_presentation
+    css:
+      #completed {
+        color: grey
+      }
 ---
 
 ```{r setup, include=FALSE}
@@ -11,63 +16,125 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-## R Markdown
+## Presentation outline
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+- Can we talk about reproducibility? 
+- A gentle introduction to Rstudio
+-- Panes, Short-cuts and Addins 
+- Good pratices: RStudio and Rprojects!
+-- What you shouldn't do...
+- 
+- Is this all? Of course...
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+## Can we talk about reproducibility?
 
-## Slide with Bullets
+"The reproducibility of data is a measure of whether results in a paper can be attained by a different research team, using the same methods. This shows that the results obtained are not artifacts of the unique setup in one research lab. [1]"
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+##
 
-## Slide with R Output
+[Video]
 
-```{r cars, echo = TRUE}
+## A gentle introduction to Rstudio
 
-# https://ulyngs.github.io/rmarkdown-workshop-2019/slides/Day2.html#83
-# https://stanford.edu/~vbauer/teaching/rmarkdown.html
-# http://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/
+## Panes, Short-cuts and Addins 
 
-# Rstudio
-## A looking throught the panes
-# Utilities
-## Shortcuts
-## Add-ons
+[Screen-shots]
 
-# An work about reproducibility and project management
-## A real world scenario
-## Starting a project using RStudio
+## Good pratices: RStudio and Rprojects!
 
-# https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
-
-# Communicate your results using R
-## Rmarkdown and Rnotebooks
-## Markdonw syntax: Document style
-## Import external elements
-### Images and animations
-## Saving as HTML, pdf or doc
-## Re-scale figures
-
-# Git and code version
-## What is git?
-## Basic commands: init, add, commit, push, pull and status
-## Fundamental workflow
-## .gitignore
-
-# Extra: Bookdown and Blogdown
-# Extra: Shiny Apps
+[Concept]
 
 ## 
 
+[Screen-shots]
 
-```
+## 
 
-## Slide with Plot
+1. Click the *File* menu button, then *New Project*.
+2. Click *New Directory*.
+3. Click *New Project*.
+4. Type in the name of the directory to store your project, e.g. *my_project*.
+5. If available, select the checkbox for *Create a git repository.*
+6. Click the *Create Project* button.
 
-```{r pressure}
-plot(pressure)
-```
+## What you shouldn't do...
 
+[Please, bitch...]
+
+## Presentation outline
+
+- Can we talk about reproducibility? {#completed}
+- A gentle introduction to Rstudio {#completed}
+-- Panes, Short-cuts and Addins {#completed}
+- Good pratices: RStudio and Rprojects! {#completed}
+-- What you shouldn't do... {#completed}
+- ** Day-to-day workflow **
+- Communicate like a boss!
+- Welcome to RMarkdown
+-- Markdown syntax to document style
+-- Saving as HTML, pdf or doc
+- Hands-on moment...
+- For the last but not less important
+- Git and Git hosting services
+-- Using Git through RStudio
+- To sum up!
+- Is this all? Of course...
+- A few extras :)
+- References
+
+## Day-to-day workflow
+
+[Data science workflow]
+
+## Communicate like a boss!
+
+[Traditional way and Boss way]
+
+## Welcome to RMarkdown 
+
+[Historical background]
+
+## Markdown syntax to document style
+
+[Table with the basic syntax]
+
+## Saving as HTML, pdf or doc
+
+[RMarkdown to Image]
+[Knit logotype]
+
+## Hands-on moment...
+
+1. Click the *File* menu button, then *New File*.
+2. Click *R Markdown*.
+3. Type the title *My R Mardown*.
+4. Type the author name *It is me, Mario*.
+5. Click *HTML* as default output format.
+6. Finally, click the *OK* button.
+
+## For the last but not less important
+## Git and Git hosting services
+## Using Git through RStudio
+## To sum up!
+
+## Is this all? Of course...
+**But no**
+
+- You may should take a look in *Lintr*
+- Or Tidyverse coding style
+
+## A few extras :)
+
+- Bookdown and Blogdown
+- R presentations
+- Shiny Apps
+
+## References
+
+1. Repeatability vs. Reproducibility [1]
+2. Is there a reproducibility crisis in science? [2]
+3. XXXX
+4. XXXX
+
+[1]: https://www.technologynetworks.com/informatics/articles/repeatability-vs-reproducibility-317157 "Repeatability vs. Reproducibility"
+[2]: https://www.youtube.com/watch?v=FpCrY7x5nEE "Is there a reproducibility crisis in science?"
