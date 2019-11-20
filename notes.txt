@@ -1,0 +1,37 @@
+
+# https://ulyngs.github.io/rmarkdown-workshop-2019/slides/Day2.html#83
+# https://stanford.edu/~vbauer/teaching/rmarkdown.html
+# http://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/
+
+# Rstudio
+## A looking throught the panes
+# Utilities
+## Shortcuts
+## Add-ons
+
+# An work about reproducibility and project management
+## A real world scenario
+## Starting a project using RStudio
+
+# https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
+
+# Communicate your results using R
+## Rmarkdown and Rnotebooks
+## Markdonw syntax: Document style
+## Import external elements
+### Images and animations
+## Saving as HTML, pdf or doc
+## Re-scale figures
+
+# Git and code version
+## What is git?
+## Basic commands: init, add, commit, push, pull and status
+## Fundamental workflow
+## .gitignore
+
+# Extra: Bookdown and Blogdown
+# Extra: Shiny Apps
+
+## 
+
+

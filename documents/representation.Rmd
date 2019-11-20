@@ -3,11 +3,9 @@ title: "R and Reproducibility"
 author: "Andre Fonseca"
 date: "November 17, 2019"
 output: 
-  ioslides_presentation
-    css:
-      #completed {
-        color: grey
-      }
+  slidy_presentation:
+    css: "/home/andrefonseca/Training/r_and_reproducibility/style.css"
+    widescreen: true
 ---
 
 ```{r setup, include=FALSE}
@@ -18,13 +16,24 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Presentation outline
 
-- Can we talk about reproducibility? 
+- Can we talk about reproducibility?
 - A gentle introduction to Rstudio
--- Panes, Short-cuts and Addins 
+-- Panes, Short-cuts and Addins
 - Good pratices: RStudio and Rprojects!
 -- What you shouldn't do...
-- 
+- Day-to-day workflow
+- Communicate like a boss!
+- Welcome to RMarkdown
+-- Markdown syntax to document style
+-- Saving as HTML, pdf or doc
+- Hands-on moment...
+- For the last but not less important
+- Git and Git hosting services
+-- Using Git through RStudio
+- To sum up!
 - Is this all? Of course...
+- A few extras :)
+- References
 
 ## Can we talk about reproducibility?
 
@@ -84,7 +93,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Day-to-day workflow
 
-[Data science workflow]
+![Source: http://ohi-science.org.](/home/andrefonseca/Training/r_and_reproducibility/figues/datascience_workflow.png)
 
 ## Communicate like a boss!
 
@@ -100,9 +109,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Saving as HTML, pdf or doc
 
-[RMarkdown to Image]
-[Knit logotype]
-
+![Source: http://ohi-science.org.](/home/andrefonseca/Training/r_and_reproducibility/figues/rmarkdown_and_knitr.png)
 ## Hands-on moment...
 
 1. Click the *File* menu button, then *New File*.
@@ -112,9 +119,55 @@ knitr::opts_chunk$set(echo = FALSE)
 5. Click *HTML* as default output format.
 6. Finally, click the *OK* button.
 
+## Presentation outline
+
+- Can we talk about reproducibility? {#completed}
+- A gentle introduction to Rstudio {#completed}
+-- Panes, Short-cuts and Addins {#completed}
+- Good pratices: RStudio and Rprojects! {#completed}
+-- What you shouldn't do... {#completed}
+- Day-to-day workflow {#completed}
+- Communicate like a boss! {#completed}
+- Welcome to RMarkdown {#completed}
+-- Markdown syntax to document style {#completed}
+-- Saving as HTML, pdf or doc {#completed}
+- Hands-on moment... {#completed}
+- ** For the last but not less important **
+- Git and Git hosting services
+-- Using Git through RStudio
+- To sum up!
+- Is this all? Of course...
+- A few extras :)
+- References
+
 ## For the last but not less important
+
+[Version coding and Git concept]
+
 ## Git and Git hosting services
+
+[Images]
+
+Wait! Let's create a git account!
+
+## 
+
+>- init
+>- clone
+>- remote
+>- status
+>- add
+>- commit
+>- push
+>- pull
+>- merge
+
+[Commands and cheet sheat]
+
 ## Using Git through RStudio
+
+
+
 ## To sum up!
 
 ## Is this all? Of course...
@@ -126,15 +179,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ## A few extras :)
 
 - Bookdown and Blogdown
-- R presentations
 - Shiny Apps
+- R presentations
+
+##
+
+[Mind blow]
 
 ## References
 
 1. Repeatability vs. Reproducibility [1]
 2. Is there a reproducibility crisis in science? [2]
-3. XXXX
+3. RMarkdown CheatSheet by RStudio [3]
 4. XXXX
 
 [1]: https://www.technologynetworks.com/informatics/articles/repeatability-vs-reproducibility-317157 "Repeatability vs. Reproducibility"
 [2]: https://www.youtube.com/watch?v=FpCrY7x5nEE "Is there a reproducibility crisis in science?"
+[3]: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf "RMarkdown CheatSheet by RStudio"
