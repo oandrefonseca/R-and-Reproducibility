@@ -12,6 +12,7 @@
 class: center, middle, inverse, title-slide
 
 # R and Reproducibility
+## Best pratices and tips!
 ### Andre Fonseca
 ### 2019-11-21
 
@@ -68,8 +69,8 @@ class: center
 class: center
 ![](figures/rstudio_addin.png)
 
+### There's plenty of different *addins*. For instance, [remedy](https://github.com/ThinkR-open/remedy) it is a nice one to edit markdown syntax.
 
-## 
 ---
 class: center
 ![](figures/rstudio_shortcuts.png)
@@ -104,15 +105,16 @@ The .RProj in a nutshell!
 5. If available, select the checkbox for **Create a git repository.**
 6. Click the **Create Project** button.
 
-(We gonna have a hands-on moment)
+(WAIT! We gonna have a hands-on moment)
 
 ---
+class: center
 
 ### What you shouldn't do...
+##### setwd() and rm(list = ls())
+![:scale 60%](figures/r_newbie_style.png)
 
-https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
-
-[Please, bitch...]
+*Yeah... I know... You are still doing this, right?*
 
 ---
 # Presentation outline
@@ -136,14 +138,36 @@ https://www.tidyverse.org/blog/2017/12/workflow-vs-script/
 - Finally! To sum up!
 
 ---
-
-![:scale 80%](figures/datascience_workflow.png)
+class: center
 # Day-to-day workflow
+
+![](figures/datascience_workflow.png)
+
+#### Import &gt; Clean and manipulate &gt; Modeling &gt; Visualize &gt; Communicate!
 
 ---
 # Communicate your results like a boss!
 
-[Traditional way and Boss way scheme]
+.pull-left[
+
+#### Option 1 -Traditional way
+
+- Excel Sheet (.xls)
+- Presentations (.pptx)
+- LaTex (.pdf)
+- Documents (.doc)
+
+**A lot of copy-and-paste and confusion** :(
+]
+
+.pull-right[
+
+#### Option 2 - The boss way
+
+- RMarkdown (.doc, .pdf, .html, .pptx)
+
+**Extremely faster and easier!**
+]
 
 ---
 # Welcome to RMarkdown 
@@ -166,7 +190,36 @@ class: center
 
 ### Almost in the hands-on moment! But first, a few concepts in RMarkdown!
 
-[RMarkdown concepts]
+.pull-left[
+
+````markdown
+---
+title: "Document Name"
+author: "Author"
+date: "Month DD, YYYY"
+output: html_document
+---
+
+## R Markdown
+
+Add description here.
+
+```{r cars}
+summary(cars)
+```
+````
+]
+
+.pull-right[
+
+## - YAML
+
+## - Markdown
+
+## - R Code
+
+]
+
 
 ---
 # Hands-on moment...
@@ -177,6 +230,8 @@ class: center
 4. Type the author name *It is me, Mario*.
 5. Click *HTML* as default output format.
 6. Finally, click the *OK* button.
+
+### Let's code a little bit!
 
 ---
 # Presentation outline
@@ -202,13 +257,28 @@ class: center
 ---
 # Coding version: last but not less important
 
-[Version coding and Git concept]
+Briefly, **version control (VCS)** is a system that records changes to a file or set of files over time so that you can recall specific versions later.  Nowadays, there two main VCS, Apache subversion (SVN)  and git.
+
+**Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ---
 class: center
-![](figures/git_flowchart.png)
----
 
+![:scale 90%](figures/git_flowchart.png)
+
+#### Coding &gt; Adding (Stage Area) &gt; Commiting &gt; Push
+
+---
+background-image: url(figures/git_flavors.jpg)
+background-size: cover
+class: center, bottom
+
+# Git and Git hosting services
+
+### Wait! Let's create a GitHub [account](https://http://github.com) !
+#### Need help? Click [here](https://www.youtube.com/watch?v=ezxRcdJ8glM)
+
+---
 ## A few basic command in Git that you should know...
 
 - init
@@ -225,26 +295,27 @@ class: center
 - pull
 - merge
 
+--
 #### We are not covering git commands in this class, but I strongly suggest you guys understand more about the program. Please check out this outstanding [tutorial](https://rogerdudler.github.io/git-guide/)
 
 ---
-background-image: url(figures/git_flavors.jpg)
-background-size: cover
-class: center, bottom, inverse
-
-# Git and Git hosting services
-
-### Wait! Let's create a GitHub **account** !
-
----
+class: center
 # Using Git through RStudio
-
-![](figures/git_account_creation.gif)
+ 
+&lt;video width="80%" height="40%" controls&gt;
+  &lt;source src="figures/git_rstudio_integration.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
 
 ---
 # Finally! To sum up!
 
-[Project creation and workflow]
+1. We saw how powerful are R projects and how it can avoid headaches!
+2. We learn how **RMarkdown** can make our research faster and reproducible.
+3. We got glimpses into how to properly communicate and share our findings.
+4. We were introduced to **Git** and **GitHub** repository.
+5. We mixed all the previous knowledge to make our life easier :)
+6. Finally, we had fun!
 
 ---
 # Is this all? Of course...
@@ -253,9 +324,9 @@ class: center, bottom, inverse
 
 ### More about good pratices
 
-- You may should take a look in *Lintr*
-- Or Tidyverse coding style
-- Project organization
+- You may should take a look in **Lintr**
+- Or **Tidyverse** coding style
+- Project organization **workflowr**
 
 ---
 # A few extras :)
@@ -270,7 +341,7 @@ class: center, bottom, inverse
 ---
 class: center, inverse
 ![mind+blown](https://media.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif)  
-# Thanks you!
+# Thank you!
 ### oandrefonseca@gmail.com
 
 ---
