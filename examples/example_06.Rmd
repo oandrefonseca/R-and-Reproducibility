@@ -6,6 +6,7 @@ output:
     toc: true
     includes:
       after_body: './includes/footer.html'
+    css: './includes/style.css'
 params:
   title: 'Distribution pedal vs sepal width by species'
 
@@ -26,9 +27,35 @@ library(dplyr)
 
 ```
 
+# Section 1: Main plot
+***
+
 ```{r my_analysis, results = 'hide'}
 
 ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
   geom_point() + labs(title = params$title) + theme_classic()
 
 ```
+
+# Section 2: Descriptive Statistics {.tabset .tabset-fade .tabset-pills}
+***
+
+## First
+
+```{r summary}
+
+summary(iris)
+
+```
+
+## Second
+
+```{r table_species}
+
+table(iris$Species)
+
+```
+
+## Third
+
+Empty
