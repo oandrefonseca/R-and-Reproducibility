@@ -204,11 +204,27 @@ class: center
 ---
 # Coding version: last but not less important
 
-[Version coding and Git concept]
+Briefly, **version control (VCS)** is a system that records changes to a file or set of files over time so that you can recall specific versions later.  Nowadays, there two main VCS, Apache subversion (SVN)  and git.
+
+**Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ---
 class: center
-![](figures/git_flowchart.png)
+![:scale 60%](figures/git_flowchart.png)
+
+---
+background-image: url(figures/git_flavors.jpg)
+background-size: cover
+class: center, bottom, inverse
+
+# Git and Git hosting services
+
+### Wait! Let's create a GitHub [account](https://http://github.com) !
+---
+
+<iframe width="1300" height="600" src="https://www.youtube.com/watch?v=ezxRcdJ8glM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
 ---
 
 ## A few basic command in Git that you should know...
@@ -230,26 +246,12 @@ class: center
 #### We are not covering git commands in this class, but I strongly suggest you guys understand more about the program. Please check out this outstanding [tutorial](https://rogerdudler.github.io/git-guide/)
 
 ---
-background-image: url(figures/git_flavors.jpg)
-background-size: cover
-class: center, bottom, inverse
-
-# Git and Git hosting services
-
-### Wait! Let's create a GitHub [account](https://http://github.com) !
----
-
-<iframe width="1300" height="600" src="https://www.youtube.com/watch?v=ezxRcdJ8glM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-
----
 # Using Git through RStudio
  
 1. Create a **New Project**
 4. Type in the name of the directory to store your project, e.g. **my_project**.
-5. If available, select the checkbox for **Create a git repository.**
+5. Checkbox for **Create a git repository.**
 6. Click the **Create Project** button.
-
 
 ---
 # Finally! To sum up!
