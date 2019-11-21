@@ -1,0 +1,44 @@
+---
+title: "R Markdown - Example 05"
+author: "Andre Fonseca"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+params:
+  specie: 'setosa'
+  sp_length: 4.5
+  
+---
+
+### Parameterized Reports. YAML into RMarkdown, [manual](https://rmarkdown.rstudio.com/developer_parameterized_reports.html%23parameter_types%2F#overview)
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(dplyr)
+
+```
+
+```{r print_parameters}
+
+print(params$specie)
+print(params$sp_length)
+
+```
+
+
+```{r using_parameters}
+
+iris_df <- iris %>%
+  as.data.frame()
+
+specie <- iris_df %>%
+  filter(Species == params$specie) %>%
+  summarise(
+    n_observations = n()
+  )
+
+specie
+
+```

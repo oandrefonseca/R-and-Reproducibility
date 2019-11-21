@@ -1,0 +1,84 @@
+---
+title: "R Markdown - Example 04"
+author: "Andre Fonseca"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+### Table formats and styles. kableExtra [manual](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(kableExtra)
+library(magrittr)
+library(DT)
+
+iris_kb <- kable(iris) # convert iris to kable object
+
+```
+
+```{r regular_table}
+
+kable(head(iris), caption = 'Add a title here!')
+
+```
+
+```{r paged_striped}
+
+iris_kb %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+# ?kable_styling
+# add position as "left", center, right
+
+```
+
+```{r highlight_columns}
+
+iris_kb %>%
+  kable_styling("striped", full_width = T) %>%
+  column_spec(3:4, bold = T)
+
+# Change full_width to FALSE
+# column_spec gets colors and
+
+```
+
+```{r highlight_rows}
+
+iris_kb %>%
+  kable_styling("striped", full_width = T) %>%
+  row_spec(3:5, bold = T, color = "white", background = "#D7261E")
+
+# Change full_width to FALSE
+# Filter Sepal.Length >= 4.5 and Species == "setosa"
+
+```
+
+```{r grouped_table}
+
+kable(iris, align = "c") %>%
+  kable_styling(full_width = F) %>%
+  column_spec(5, bold = T) %>%
+  collapse_rows(columns = 1, valign = "top")
+
+```
+
+### DT [manual](https://rstudio.github.io/DT/)
+
+```{r dynamic_table}
+
+datatable(iris)
+
+```
+
+```{r dynamic_table_edition}
+
+?datable
+
+# Add colnames
+# Remove rownames
+# Adding class / class = 'cell-border stripe'
+```

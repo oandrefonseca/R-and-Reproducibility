@@ -1,0 +1,88 @@
+---
+title: "R Markdown - Example 02"
+author: "Andre Fonseca"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+### Introduction to Rmd Chunks
+1. Labeling and paramaters
+
+
+```{r setup, include=FALSE}
+
+# Global *knitr* options.
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r iris_data}
+
+# Each chunk should have a label {r chunk-label, ...}
+
+head(iris)
+
+
+```
+
+2. Hiding code
+
+```{r iris_echo, echo = FALSE}
+
+# echo: Whether to echo the source code in the output document (someone may not prefer reading your smart source code but only results).
+
+head(iris)
+
+```
+
+3. Importing Libraries
+
+```{r lib_import, include = FALSE}
+
+# include = FALSE, it runs the code behind the scenes
+
+library(ggplot2)
+
+```
+
+4. Plotting figures and hide codes
+```{r plotting_figures, results = 'hide'}
+
+iris 
+
+# Hold on! Execute this line!
+# Are you seeing a pretty table below? Yes, so keep going.
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + theme_classic()
+
+```
+
+5. Optional chunks
+```{r eval_chunk}
+
+# How about create optional chunks?
+
+boolean <- TRUE
+
+```
+
+```{r conditional_chunk, eval = boolean, echo = FALSE}
+
+knitr::kable(head(iris), caption = 'Add a title here!')
+# Ops! A new function!
+
+```
+
+6. Using R variable inside a text
+
+```{r x_radius}
+
+x <- 5  # radius of a circle
+
+```
+
+For a circle with the radius `r x`,
+its area is `r pi * x^2`.

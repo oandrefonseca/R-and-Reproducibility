@@ -1,0 +1,100 @@
+---
+title: "R Markdown - Example 03"
+author: "Andre Fonseca"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+### More figures and options. Knitr [manual](https://yihui.org/knitr/options/)
+
+```{r setup, include=FALSE}
+
+library(ggplot2)
+library(here)
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+1. Previous figures
+```{r plotting_figures, results = 'hide'}
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + theme_classic()
+
+```
+
+2. Alignment options
+
+```{r plotting_center, results = 'hide', fig.align = 'center'}
+
+# fig.align = 'center', 'left', 'right'
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + theme_classic()
+
+```
+
+3. Size options - 1
+
+```{r plotting_heigh, results = 'hide', fig.align = 'center', fig.height = 10}
+
+# fig.height, fig.width, fig.dim
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + theme_classic()
+
+```
+
+4. Size options - 2
+
+```{r plotting_width, results = 'hide', fig.align = 'center', out.width = '30%'}
+
+# fig.height, fig.width, fig.dim
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + theme_classic()
+
+```
+
+5. Adding other figures
+
+```{r plotting_others, results = 'hide', fig.align = 'center', out.width = '50%', fig.cap = "FIGURE NAME"}
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + theme_classic()
+
+```
+
+```{r global_par, include = FALSE}
+
+parameters <- "results = 'hide', fig.align = 'center', out.width = '50%', fig.cap = 'RMarkdown'"
+
+```
+
+6. Including figures
+
+```{r inc_figures, fig.align = 'center', out.width='25%'}
+
+knitr::include_graphics(path = here::here('./figures/knit_logo.png'))
+
+```
+
+7. Side-by-side figures
+
+```{r side_by_side, fig.show='hold', out.width = '50%', dpi=300}
+
+# dpi=100
+
+par(mar = c(4, 4, 0.2, 0.1))
+plot(cars, pch = 19)
+plot(pressure, pch = 17)
+
+```
+
+```{r other_considerations, include = FALSE}
+
+# knitr::opts_chunk$set(echo = TRUE, fig.align = 'center', out.width = '80%', dpi = 300)
+# Local settings over global
+
+```

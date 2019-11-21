@@ -1,0 +1,34 @@
+---
+title: "R Markdown - Example 06"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    toc: true
+    includes:
+      after_body: './includes/footer.html'
+params:
+  title: 'Distribution pedal vs sepal width by species'
+
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  fig.align = 'center',
+  out.width = '80%',
+  dpi = 300)
+
+?rmarkdown::html_document
+
+library(ggplot2)
+library(dplyr)
+
+```
+
+```{r my_analysis, results = 'hide'}
+
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
+  geom_point() + labs(title = params$title) + theme_classic()
+
+```

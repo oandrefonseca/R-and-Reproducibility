@@ -15,11 +15,8 @@ Presentation outline
 * Day-to-day workflow
 * Communicate your results like a boss!
 * Welcome to RMarkdown
-  + Markdown syntax to document style
-  + Saving as HTML, pdf or doc
 * Hands-on moment...
 * For the last but not less important
-  + Git and Git hosting services
 * Using Git through RStudio
 * Finally! To sum up!
 * Is this all? Of course...
@@ -106,9 +103,7 @@ Presentation outline
 
 * Can we talk about reproducibility?
 * A gentle introduction to Rstudio
-  + Panes, Shortcuts and Addins
 * Organizing myself with Rprojects!
-  + What you shouldn't do...
 * **Day-to-day workflow**
 * Communicate your results like a boss!
 * Welcome to RMarkdown
@@ -116,8 +111,6 @@ Presentation outline
   + Saving as HTML, pdf or doc
 * Hands-on moment o/
 * Coding version: last but not less important
-  + Git and Git hosting services
-  + Using Git through RStudio
 * Finally! To sum up!
 * Is this all? Of course...
 * A few extras :)
@@ -176,14 +169,10 @@ Presentation outline
 
 * Can we talk about reproducibility?
 * A gentle introduction to Rstudio
-  + Panes, Shortcuts and Addins
 * Organizing myself with Rprojects!
-  + What you shouldn't do...
 * Day-to-day workflow
 * Communicate your results like a boss!
 * Welcome to RMarkdown
-  + Markdown syntax to document style
-  + Saving as HTML, pdf or doc
 * Hands-on moment o/
 * **Coding version: last but not less important**
   + Git and Git hosting services
