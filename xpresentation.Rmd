@@ -275,7 +275,6 @@ summary(cars)
 6. Finally, click the *OK* button.
 
 <br/>
-<br/>
 
 .center[
 ![coding_monkey](https://media.giphy.com/media/zOvBKUUEERdNm/giphy.gif)
