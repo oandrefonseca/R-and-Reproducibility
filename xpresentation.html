@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>R and Reproducibility</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andre Fonseca" />
+    <meta name="date" content="2019-11-21" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R and Reproducibility
+## Best pratices and tips!
+### Andre Fonseca
+### 2019-11-21
+
+---
+
+
+
+
+# Presentation outline
+
+- Can we talk about reproducibility?
+- A gentle introduction to Rstudio
+  + Panes, Shortcuts and Addins
+- Organizing myself with Rprojects!
+  + What you shouldn't do...
+
+--
+- Day-to-day workflow
+- Communicate your results like a boss!
+- Welcome to RMarkdown
+- Hands-on moment...
+- Coding version: last but not less important
+- Finally! To sum up!
+
+---
+
+# Can we talk about reproducibility?
+
+
+"The reproducibility of data is a measure of whether results in a paper can be attained by a different research team, using the same methods. This shows that the results obtained are not artifacts of the unique setup in one research lab. [1]"
+
+---
+
+&lt;iframe width="1300" height="600" src="https://www.youtube.com/embed/s3JldKoA0zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;
+&lt;/iframe&gt;
+
+---
+
+# A gentle introduction to Rstudio
+
+RStudio is an integrated development environment for R, a programming language for statistical computing and graphics. The RStudio IDE is developed by RStudio, Inc., a commercial enterprise founded by JJ Allaire, creator of the programming language ColdFusion.
+
+How to install? Check it [out](www.google.com.br)!
+
+---
+class: center
+# Panes, Addins and Shortcuts
+
+![:scale 50%](figures/rstudio_ide.png)
+
+**Figure 1. Rstudio panels.** *Source*, coding area similar text editor. *Console*, all code typed into "Source" area will be evaluated into R Console. *Environment/History*, in this panel we can inspect what objects were loaded into your workspace. *Files/Plots/Packages/Help*, another useful panel, allowing directory browsing, plot visualization, package installation or selection. 
+
+---
+class: center
+![](figures/rstudio_addin.png)
+
+### There's plenty of different *addins*. For instance, [remedy](https://github.com/ThinkR-open/remedy) it is a nice one to edit markdown syntax.
+
+---
+class: center
+![](figures/rstudio_shortcuts.png)
+## For now keep in my **Ctrl+Alt+I** to insert a new code chunk
+
+---
+# Organizing myself with Rprojects!
+
+**RStudio** projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents.
+
+But what it means? In short, productivity and **less headache**
+
+---
+The .RProj in a nutshell!
+
+1. Creates a project file (with an .Rproj extension) within the project directory. This file contains various project options (discussed below) and can also be used as a shortcut for opening the project directly from the filesystem.
+
+2. Creates a hidden directory (named .Rproj.user) where project-specific temporary files (e.g. auto-saved source documents, window-state, etc.) are stored. This directory is also automatically added to .Rbuildignore, .gitignore, etc. if required.
+
+3. Loads the project into RStudio and display its name in the Projects toolbar (which is located on the far right side of the main toolbar)
+
+[Oficial Documentation](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) 
+
+---
+
+## For your convenience
+
+1. Click the **File** menu button, then **New Project**.
+2. Click **New Directory**.
+3. Click **New Project**.
+4. Type in the name of the directory to store your project, e.g. **my_project**.
+5. If available, select the checkbox for **Create a git repository.**
+6. Click the **Create Project** button.
+
+(WAIT! We gonna have a hands-on moment)
+
+---
+class: center
+
+### What you shouldn't do...
+##### setwd() and rm(list = ls())
+![:scale 60%](figures/r_newbie_style.png)
+
+*Yeah... I know... You are still doing this, right?*
+
+---
+# Presentation outline
+
+- Can we talk about reproducibility?
+- A gentle introduction to Rstudio
+- Organizing myself with Rprojects!
+- **Day-to-day workflow**
+- Communicate your results like a boss!
+- Welcome to RMarkdown
+
+--
+  + Markdown syntax to document style
+  
+--
+  + Saving as HTML, pdf or doc
+
+--
+- Hands-on moment o/
+- Coding version: last but not less important
+- Finally! To sum up!
+
+---
+class: center
+# Day-to-day workflow
+
+![](figures/datascience_workflow.png)
+
+#### Import &gt; Clean and manipulate &gt; Modeling &gt; Visualize &gt; Communicate!
+
+---
+# Communicate your results like a boss!
+
+.pull-left[
+
+#### Option 1 -Traditional way
+
+- Excel Sheet (.xls)
+- Presentations (.pptx)
+- LaTex (.pdf)
+- Documents (.doc)
+
+**A lot of copy-and-paste and confusion** :(
+]
+
+.pull-right[
+
+#### Option 2 - The boss way
+
+- RMarkdown (.doc, .pdf, .html, .pptx)
+
+**Extremely faster and easier!**
+]
+
+---
+# Welcome to RMarkdown 
+
+Basically, it is an authoring framework for data science developed by RStudio Team. RMarkdown is an R package build upon **Markdown** is a text-to-HTML conversion tool for web writers. Originally Markdown was written in **Perl**,  allowing you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+
+---
+### Markdown syntax to document style
+
+&lt;iframe src="documents/rmarkdown-2.0.pdf" width="95%" height="80%"&gt;
+This browser does not support PDFs. Please download the PDF to view it: Download PDF
+&lt;/iframe&gt;
+
+---
+class: center
+# Saving as HTML, pdf or doc
+![:scale 60%](figures/rmarkdown_and_knitr.png)
+
+---
+
+### Almost in the hands-on moment! But first, a few concepts in RMarkdown!
+
+.pull-left[
+
+````markdown
+---
+title: "Document Name"
+author: "Author"
+date: "Month DD, YYYY"
+output: html_document
+---
+
+## R Markdown
+
+Add description here.
+
+```{r cars}
+summary(cars)
+```
+````
+]
+
+.pull-right[
+
+## - YAML
+
+## - Markdown
+
+## - R Code
+
+]
+
+
+---
+# Hands-on moment...
+
+1. Click the *File* menu button, then *New File*.
+2. Click *R Markdown*.
+3. Type the title *My R Mardown*.
+4. Type the author name *It is me, Mario*.
+5. Click *HTML* as default output format.
+6. Finally, click the *OK* button.
+
+### Let's code a little bit!
+
+---
+# Presentation outline
+
+- Can we talk about reproducibility?
+- A gentle introduction to Rstudio
+- Organizing myself with Rprojects!
+- Day-to-day workflow
+- Communicate your results like a boss!
+- Welcome to RMarkdown
+- Hands-on moment o/
+- **Coding version: last but not less important**
+
+--
+  + Git and Git hosting services
+
+--
+  + Using Git through RStudio
+
+--
+- Finally! To sum up!
+
+---
+# Coding version: last but not less important
+
+Briefly, **version control (VCS)** is a system that records changes to a file or set of files over time so that you can recall specific versions later.  Nowadays, there two main VCS, Apache subversion (SVN)  and git.
+
+**Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+---
+class: center
+
+![:scale 90%](figures/git_flowchart.png)
+
+#### Coding &gt; Adding (Stage Area) &gt; Commiting &gt; Push
+
+---
+background-image: url(figures/git_flavors.jpg)
+background-size: cover
+class: center, bottom
+
+# Git and Git hosting services
+
+### Wait! Let's create a GitHub [account](https://http://github.com) !
+#### Need help? Click [here](https://www.youtube.com/watch?v=ezxRcdJ8glM)
+
+---
+## A few basic command in Git that you should know...
+
+- init
+- clone
+- remote
+--
+
+- status
+- add
+- commit
+- push
+
+--
+- pull
+- merge
+
+--
+#### We are not covering git commands in this class, but I strongly suggest you guys understand more about the program. Please check out this outstanding [tutorial](https://rogerdudler.github.io/git-guide/)
+
+---
+class: center
+# Using Git through RStudio
+ 
+&lt;video width="80%" height="40%" controls&gt;
+  &lt;source src="figures/git_rstudio_integration.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+
+---
+# Finally! To sum up!
+
+1. We saw how powerful are R projects and how it can avoid headaches!
+2. We learn how **RMarkdown** can make our research faster and reproducible.
+3. We got glimpses into how to properly communicate and share our findings.
+4. We were introduced to **Git** and **GitHub** repository.
+5. We mixed all the previous knowledge to make our life easier :)
+6. Finally, we had fun!
+
+---
+# Is this all? Of course...
+
+#### *But no*
+
+### More about good pratices
+
+- You may should take a look in **Lintr**
+- Or **Tidyverse** coding style
+- Project organization **workflowr**
+
+---
+# A few extras :)
+
+### To study
+
+- Bookdown and Blogdown
+- Shiny Apps
+- Rticles package
+- **R presentations**
+
+---
+class: center, inverse
+![mind+blown](https://media.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif)  
+# Thank you!
+### oandrefonseca@gmail.com
+
+---
+# References
+
+1. Repeatability vs. Reproducibility [1]
+2. Is there a reproducibility crisis in science? [2]
+3. RMarkdown CheatSheet by RStudio [3]
+4. Rstudio CheatSheet [4]
+
+[1]: https://www.technologynetworks.com/informatics/articles/repeatability-vs-reproducibility-317157 "Repeatability vs. Reproducibility"
+[2]: https://www.youtube.com/watch?v=FpCrY7x5nEE "Is there a reproducibility crisis in science?"
+[3]: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf "RMarkdown CheatSheet by RStudio"
+[4]: https://rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf "Rstudio CheatSheet"
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macro.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

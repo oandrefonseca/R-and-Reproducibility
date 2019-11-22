@@ -1,0 +1,88 @@
+---
+title: "R Markdown - Example 01"
+author: "Andre Fonseca"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6 
+
+***
+
+### Item List
+
+* Item 1
+* Item 3
+* Item 2
+
+### Item List
+
+- Item 1
+- Item 3
+- Item 2
+
+### Item List
+
+1. Item 1
+2. Item 2
+5. Item 3
+3. Item 4
+4. Item 5
+
+### Item List
+
+1. Item 1
+2. Item 2
+3. Item 3
+  - Sub-item 3.1
+  - Sub-item 3.2
+4. Item 4
+
+## Can we create a table?
+
+Table Header | Second Header
+------------- | -------------
+Table Cell | Cell 2
+Cell 3 | Cell 4
+
+## Formating text **bold**, *italic*, superscript^2^, subscript H~3~PO~4~ and ~~strikethrough~~
+
+Lorem Ipsum is simply dummy text of the printing and **typesetting** industry. Lorem Ipsum has been the industry's standard dummy text ever *since* the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+### Quotation block
+
+> Nunc sed velit dignissim sodales ut eu sem. Urna duis convallis convallis tellus id interdum velit. Pharetra massa massa ultricies mi quis hendrerit dolor. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit.
+
+### Or a verbatim 
+
+```
+Malesuada proin libero nunc consequat interdum. At lectus urna duis convallis. Eu ultrices vitae auctor eu augue ut lectus arcu.
+```
+
+***
+
+### Do you what is the Loreum ipsum?
+
+Check it out, lorem ipsum [wikipedia](https://en.wikipedia.org/wiki/Lorem_ipsum)?
+
+### Can we add images?
+
+Wikipedia: ![](http://vectorlogofree.com/wp-content/uploads/2014/09/49404-wikipedia-logotype-of-earth-puzzle-icon-vector-icon-vector-eps.png)
+
+***
+
+### Adding Latex equations
+
+$A = \pi*r^{2}$
+
+***
+
+### Embeded R operations
+
+A + B, where A = 3 and B = 4. A+B = `r 3 + 4`
+
