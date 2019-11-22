@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>R and Reproducibility</title>
+    <title>R, Reproducibility and Communication</title>
     <meta charset="utf-8" />
     <meta name="author" content="Andre Fonseca" />
     <meta name="date" content="2019-11-21" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/remark-css/robot-fonts.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# R and Reproducibility
+# R, Reproducibility and Communication
 ## Best pratices and tips!
 ### Andre Fonseca
 ### 2019-11-21
@@ -38,16 +40,41 @@ class: center, middle, inverse, title-slide
 - Finally! To sum up!
 
 ---
+background-image: url(figures/reproducibility.jpg)
+background-size: cover
+class: center
 
 # Can we talk about reproducibility?
 
+--
 
-"The reproducibility of data is a measure of whether results in a paper can be attained by a different research team, using the same methods. This shows that the results obtained are not artifacts of the unique setup in one research lab. [1]"
+&lt;/br&gt;
+
+.content-box-grey[.Large[Reproducibility or Repeatability]]
+
+--
+
+&lt;/br&gt;
+
+.full-width[
+  .content-box-grey[
+  "The reproducibility of data is a measure of whether results in a paper can be attained by a different research team, using the same methods. This shows that the results obtained are not artifacts of the unique setup in one research lab. [1]"
+  ]
+]
 
 ---
+class: center, middle, inverse
 
 &lt;iframe width="1300" height="600" src="https://www.youtube.com/embed/s3JldKoA0zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;
 &lt;/iframe&gt;
+
+---
+class: center, middle, inverse
+
+# Did you like it?
+
+
+### We gonna have a small slice of these **good practices** today
 
 ---
 
@@ -81,7 +108,7 @@ class: center
 
 **RStudio** projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents.
 
-But what it means? In short, productivity and **less headache**
+But what it means? In short, productivity and .Large[**less headache**]
 
 ---
 The .RProj in a nutshell!
@@ -175,6 +202,7 @@ class: center
 Basically, it is an authoring framework for data science developed by RStudio Team. RMarkdown is an R package build upon **Markdown** is a text-to-HTML conversion tool for web writers. Originally Markdown was written in **Perl**,  allowing you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
 
 ---
+class: inverse
 ### Markdown syntax to document style
 
 &lt;iframe src="documents/rmarkdown-2.0.pdf" width="95%" height="80%"&gt;
@@ -187,7 +215,6 @@ class: center
 ![:scale 60%](figures/rmarkdown_and_knitr.png)
 
 ---
-
 ### Almost in the hands-on moment! But first, a few concepts in RMarkdown!
 
 .pull-left[
@@ -231,7 +258,14 @@ summary(cars)
 5. Click *HTML* as default output format.
 6. Finally, click the *OK* button.
 
+&lt;br/&gt;
+&lt;br/&gt;
+
+.center[
+![coding_monkey](https://media.giphy.com/media/zOvBKUUEERdNm/giphy.gif)
 ### Let's code a little bit!
+]
+
 
 ---
 # Presentation outline
@@ -262,7 +296,7 @@ Briefly, **version control (VCS)** is a system that records changes to a file or
 **Git** is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ---
-class: center
+class: center, middle
 
 ![:scale 90%](figures/git_flowchart.png)
 
@@ -284,8 +318,8 @@ class: center, bottom
 - init
 - clone
 - remote
---
 
+--
 - status
 - add
 - commit
@@ -312,7 +346,7 @@ Your browser does not support the video tag.
 
 1. We saw how powerful are R projects and how it can avoid headaches!
 2. We learn how **RMarkdown** can make our research faster and reproducible.
-3. We got glimpses into how to properly communicate and share our findings.
+3. We got a few tips on how to properly communicate and share our scientific results.
 4. We were introduced to **Git** and **GitHub** repository.
 5. We mixed all the previous knowledge to make our life easier :)
 6. Finally, we had fun!
@@ -339,7 +373,7 @@ Your browser does not support the video tag.
 - **R presentations**
 
 ---
-class: center, inverse
+class: center, middle, inverse
 ![mind+blown](https://media.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif)  
 # Thank you!
 ### oandrefonseca@gmail.com
