@@ -111,7 +111,7 @@ class: center
 But what it means? In short, productivity and .Large[**less headache**]
 
 ---
-The .RProj in a nutshell!
+## The .RProj in a nutshell!
 
 1. Creates a project file (with an .Rproj extension) within the project directory. This file contains various project options (discussed below) and can also be used as a shortcut for opening the project directly from the filesystem.
 
@@ -120,6 +120,8 @@ The .RProj in a nutshell!
 3. Loads the project into RStudio and display its name in the Projects toolbar (which is located on the far right side of the main toolbar)
 
 [Oficial Documentation](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) 
+
+![](figures/rstudio_project_bar.png)
 
 ---
 
@@ -175,6 +177,7 @@ class: center
 ---
 # Communicate your results like a boss!
 
+--
 .pull-left[
 
 #### Option 1 -Traditional way
@@ -184,22 +187,35 @@ class: center
 - LaTex (.pdf)
 - Documents (.doc)
 
-**A lot of copy-and-paste and confusion** :(
+**A lot of copy-and-paste and confusion** <br/>
+:(
+
 ]
 
+--
 .pull-right[
 
 #### Option 2 - The boss way
 
 - RMarkdown (.doc, .pdf, .html, .pptx)
-
-**Extremely faster and easier!**
+<br/><br/><br/>
+.Large[**Extremely faster and easier!**]
 ]
 
 ---
 # Welcome to RMarkdown 
 
 Basically, it is an authoring framework for data science developed by RStudio Team. RMarkdown is an R package build upon **Markdown** is a text-to-HTML conversion tool for web writers. Originally Markdown was written in **Perl**,  allowing you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+
+--
+.center[
+### Analyze > Comment > Document > Share
+]
+
+.center[
+![not_bad](https://media.giphy.com/media/jVTrhpvPbkgYVJ5eZh/giphy.gif)
+
+]
 
 ---
 class: inverse
@@ -374,7 +390,7 @@ Your browser does not support the video tag.
 
 ---
 class: center, middle, inverse
-![mind+blown](https://media.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif)  
+![mind_blown](https://media.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif)  
 # Thank you!
 ### oandrefonseca@gmail.com
 
