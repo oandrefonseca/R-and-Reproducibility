@@ -7,7 +7,7 @@ output: html_document
 
 ### More figures and options. Knitr [manual](https://yihui.org/knitr/options/)
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 
 library(ggplot2)
 library(here)
@@ -37,7 +37,7 @@ ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
 
 3. Size options - 1
 
-```{r plotting_heigh, results = 'hide', fig.align = 'center', fig.height = 10}
+```{r plotting_heigh, results = 'hide', fig.align = 'center', fig.width = 10}
 
 # fig.height, fig.width, fig.dim
 

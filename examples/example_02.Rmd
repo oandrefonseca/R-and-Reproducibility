@@ -37,6 +37,14 @@ head(iris)
 
 ```
 
+```{r beltrano, include = FALSE}
+
+library(dplyr)
+
+
+```
+
+
 3. Importing Libraries
 
 ```{r lib_import, include = FALSE}
@@ -65,6 +73,7 @@ ggplot(iris, aes(x = Sepal.Width, y = Petal.Width, color = Species)) +
 
 # How about create optional chunks?
 
+# if()...
 boolean <- TRUE
 
 ```

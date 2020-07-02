@@ -11,11 +11,14 @@ output: html_document
 
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
+library(dplyr)
 library(kableExtra)
 library(magrittr)
 library(DT)
 
 iris_kb <- kable(iris) # convert iris to kable object
+
+View(iris)
 
 ```
 
@@ -48,12 +51,24 @@ iris_kb %>%
 
 ```{r highlight_rows}
 
+# kableExtra
+
+row_selected <- iris %>%
+  as.data.frame()
+
+row_selected$idrow <- 1:nrow(row_selected)
+row_selected <- subset(row_selected, Petal.Width >= 0.3)
+
+
 iris_kb %>%
   kable_styling("striped", full_width = T) %>%
-  row_spec(3:5, bold = T, color = "white", background = "#D7261E")
+  row_spec(row_selected$idrow, bold = T, color = "white", background = "#D7261E")
 
 # Change full_width to FALSE
 # Filter Sepal.Length >= 4.5 and Species == "setosa"
+
+
+
 
 ```
 
