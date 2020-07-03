@@ -4,7 +4,7 @@ An introduction to project management and reproducibility in R, including RStudi
 
 
 
-![](/home/andrefonseca/Training/r_and_reproducibility/figures/Presentation.gif)
+![](./figures/Presentation.gif)
 
 
 
